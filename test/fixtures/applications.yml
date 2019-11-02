@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adopter: one
+  first_name: MyString
+  last_name: MyString
+  why_adopt: MyString
+
+two:
+  adopter: two
+  first_name: MyString
+  last_name: MyString
+  why_adopt: MyString

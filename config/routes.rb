@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :admins
       resources :adopters
       resources :dogs
+      resources :applications
     end
   end
 
