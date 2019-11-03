@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_02_145916) do
+ActiveRecord::Schema.define(version: 2019_11_02_163133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,11 @@ ActiveRecord::Schema.define(version: 2019_11_02_145916) do
     t.string "why_adopt"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "submitted", default: true
+    t.boolean "initial_review", default: false
+    t.boolean "references", default: false
+    t.boolean "home_visit", default: false
+    t.boolean "final_approval", default: false
     t.index ["adopter_id"], name: "index_applications_on_adopter_id"
   end
 
