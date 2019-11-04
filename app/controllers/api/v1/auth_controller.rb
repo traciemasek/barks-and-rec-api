@@ -6,7 +6,7 @@ class Api::V1::AuthController < ApplicationController
 
     if adopter && adopter.authenticate(params[:adopter][:password]) 
       token = JWT.encode({adopter_id: adopter.id}, AUTH_SECRET)
-      render json: {adopter: adopter, token: token}, status: :created
+      render json: {adopter: AdopterSerializer.new(adopter), token: token}, status: :created
     else 
       render json: {errors: "Log in failed"}, status: :unauthorized
     end
@@ -34,8 +34,12 @@ class Api::V1::AuthController < ApplicationController
       adopter = Adopter.find_by(id: adopter_id)
       render json: adopter
     end
-
+    # this still needs some sort of error handling if decoded_token returns nil, but I can't get it to work
+    # something like if admin & adopter are falsey, then render json: {errors: "Unknown user"}, status: :authorized
+    # when i try this, it keeps sending a 500 and setting the user to the 500 error
   end
+
+end
 
 # # fixed the auto_login to only have one method, so these are deprecated
   # def auto_login_admin
@@ -52,5 +56,3 @@ class Api::V1::AuthController < ApplicationController
 
   #   render json: adopter
   # end
-
-end

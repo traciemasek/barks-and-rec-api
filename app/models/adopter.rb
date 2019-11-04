@@ -5,4 +5,5 @@ class Adopter < ApplicationRecord
 
   has_many :favorites
   has_many :dogs, through: :favorites
+  has_one :application
 end
