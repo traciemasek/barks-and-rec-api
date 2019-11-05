@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_02_163133) do
+ActiveRecord::Schema.define(version: 2019_11_04_232958) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 2019_11_02_163133) do
     t.string "age"
     t.string "age_group"
     t.string "description"
-    t.string "foster"
     t.boolean "altered"
     t.boolean "dog_friendly"
     t.boolean "kid_friendly"
@@ -77,7 +76,17 @@ ActiveRecord::Schema.define(version: 2019_11_02_163133) do
     t.index ["dog_id"], name: "index_favorites_on_dog_id"
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.string "category"
+    t.boolean "complete", default: false
+    t.bigint "adopter_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["adopter_id"], name: "index_tasks_on_adopter_id"
+  end
+
   add_foreign_key "applications", "adopters"
   add_foreign_key "favorites", "adopters"
   add_foreign_key "favorites", "dogs"
+  add_foreign_key "tasks", "adopters"
 end

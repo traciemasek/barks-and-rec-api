@@ -14,7 +14,15 @@ class Api::V1::FavoritesController < ApplicationController
     else
       render json: {errors: favorite.errors.full_messages}, status: :not_acceptable
     end
+  end
 
+  def destroy
+    # byebug
+    # need to send the id of the favorite NOT the dog
+    # favorite = Favorite.find_by(id: params[:id])
+    favorite = Favorite.find(params[:id])
+    favorite.destroy
+    render json: favorite
   end
 
   private

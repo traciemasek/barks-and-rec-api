@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :dogs
       resources :applications
       resources :favorites
+      resources :tasks
 
       post "/signup", to: "adopters#create"
       post "/adopter_login", to: "auth#adopter_login"
