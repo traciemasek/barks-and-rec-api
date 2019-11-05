@@ -45,7 +45,6 @@ Dog.create!(
   age: "6 months",
   age_group: "puppy",
   description: "long boi",
-  foster: "Foster1",
   altered: true,
   dog_friendly: false,
   kid_friendly: true,
@@ -65,7 +64,6 @@ Dog.create!(
   age: "4",
   age_group: "adult",
   description: "small for her breed",
-  foster: "Foster2",
   altered: true,
   dog_friendly: true,
   kid_friendly: true,
@@ -85,7 +83,6 @@ Dog.create!(
   age: "12",
   age_group: "senior",
   description: "an old lady who loves blankets",
-  foster: "Foster3",
   altered: true,
   dog_friendly: true,
   kid_friendly: false,
@@ -105,7 +102,6 @@ Dog.create!(
   age: "7",
   age_group: "adult",
   description: "a lovable mush",
-  foster: "Foster4",
   altered: true,
   dog_friendly: true,
   kid_friendly: true,
@@ -113,6 +109,8 @@ Dog.create!(
   has_special_needs: false,
   special_needs_desc: ""
  )
+
+# Dog.create(name: "Cousin Larry", sex: "male", breed: "mixed", img1: "https://lh3.googleusercontent.com/NaldLYwjef-egqZSs43ccPtQ23ZNCUAPUck7blsNARUmOPwU2V7iJ5OkreMdJIV_6vt0P0CXDcV1qwfrff0MCp0wBmW8tNtKaQq7MEoT_drhZRqcPSqQRJCUozLXhTgKoZ7nTefwL_s=s764-no", weight: 15, size: "small", age: "9", age_group: "adult", description: "a perfect stranger to no one", altered: true, dog_friendly: true, kid_friendly: true, cat_friendly: true, has_special_needs: false, special_needs_desc: "")
 
  Adopter.create!(username: "test2", password: "1234")
  Adopter.create!(username: "test3", password: "1234")
