@@ -10,7 +10,7 @@ class Api::V1::AdoptersController < ApplicationController
     adopter = Adopter.create(adopter_params)
     if adopter.valid?
       token = JWT.encode({adopter_id: adopter.id}, AUTH_SECRET)
-      render json: {adopter: adopter, token: token}, status: :created
+      render json: {adopter: AdopterSerializer.new(adopter), token: token}, status: :created
     else
       render json: {errors: adopter.errors.full_messages}, status: :not_acceptable
     end
