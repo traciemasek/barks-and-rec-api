@@ -31,88 +31,123 @@ ruby20 = "https://lh3.googleusercontent.com/rmpNmbi73SNAAa8FyHZ2N1gqoV5fd1DgBqJ2
 
 
 Dog.destroy_all
-Adopter.destroy_all
+# Adopter.destroy_all
 
 Dog.create!(
   name: "Hot Rod",
   sex: "male",
-  breed: "mutt",
+  breed: "Daschund Terrier Mix",
   img1: ruby2,
-  # img2: "",
-  # img3: "",
-  weight: 15,
+  img2: "",
+  img3: "",
   size: "small",
-  age: "6 months",
-  age_group: "puppy",
-  description: "long boi",
-  altered: true,
-  dog_friendly: false,
-  kid_friendly: true,
-  cat_friendly: true,
-  has_special_needs: false,
-  # special_needs_desc:
+  age: "puppy",
+  about: "long boi",
+  color: "black/white",
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "dogs, cats, children",
+  badHome: ""
  )
 Dog.create!(
   name: "Pickles",
   sex: "female",
   breed: "great dane mix",
   img1: ruby1,
-  # img2: "",
-  # img3: "",
-  weight: 115,
-  size: "huge",
-  age: "4",
-  age_group: "adult",
-  description: "small for her breed",
-  altered: true,
-  dog_friendly: true,
-  kid_friendly: true,
-  cat_friendly: false,
-  has_special_needs: false,
-  # special_needs_desc:
+  img2: "",
+  img3: "",
+  size: "XL",
+  age: "adult",
+  about: "small for her breed",
+  color: "tan",
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "dogs, cats",
+  badHome: "children"
  )
 Dog.create!(
   name: "Seaweed",
   sex: "female",
   breed: "chihuahua",
   img1: ruby3,
-  # img2: "",
-  # img3: "",
-  weight: 25,
+  img2: "",
+  img3: "",
   size: "medium",
-  age: "12",
-  age_group: "senior",
-  description: "an old lady who loves blankets",
-  altered: true,
-  dog_friendly: true,
-  kid_friendly: false,
-  cat_friendly: true,
-  has_special_needs: true,
-  special_needs_desc: "medication for old age"
+  age: "senior",
+  about: "an old lady who loves blankets",
+  color: "grey",
+  houseTrained: "Yes",
+  health: "medication for old age",
+  goodHome: "dogs, cats",
+  badHome: "children"
  )
 Dog.create!(
   name: "Rufus",
   sex: "male",
   breed: "pitbull",
   img1: ruby4,
-  # img2: "",
-  # img3: "",
-  weight: 45,
+  img2: "",
+  img3: "",
   size: "large",
-  age: "7",
-  age_group: "adult",
-  description: "a lovable mush",
-  altered: true,
-  dog_friendly: true,
-  kid_friendly: true,
-  cat_friendly: true,
-  has_special_needs: false,
-  special_needs_desc: ""
+  age: "adult",
+  about: "a lovable mush",
+  color: "brindle",
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "dogs, cats",
+  badHome: "children"
+ )
+Dog.create!(
+  name: "Bingo",
+  sex: "female",
+  breed: "mixed breed",
+  img1: ruby4,
+  img2: "",
+  img3: "",
+  size: "medium",
+  age: "adult",
+  about: "a lucky lady",
+  color: "black",
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "dogs, children",
+  badHome: "cats"
+ )
+Dog.create!(
+  name: "Cousin Larry",
+  sex: "male",
+  breed: "poodle",
+  img1: ruby4,
+  img2: "",
+  img3: "",
+  size: "small",
+  age: "young",
+  about: "a perfect stranger to no one",
+  color: "white",
+  houseTrained: "Working on it",
+  health: "N/A",
+  goodHome: "dogs, cats, children",
+  badHome: ""
  )
 
 # Dog.create(name: "Cousin Larry", sex: "male", breed: "mixed", img1: "https://lh3.googleusercontent.com/NaldLYwjef-egqZSs43ccPtQ23ZNCUAPUck7blsNARUmOPwU2V7iJ5OkreMdJIV_6vt0P0CXDcV1qwfrff0MCp0wBmW8tNtKaQq7MEoT_drhZRqcPSqQRJCUozLXhTgKoZ7nTefwL_s=s764-no", weight: 15, size: "small", age: "9", age_group: "adult", description: "a perfect stranger to no one", altered: true, dog_friendly: true, kid_friendly: true, cat_friendly: true, has_special_needs: false, special_needs_desc: "")
 
- Adopter.create!(username: "test2", password: "1234")
- Adopter.create!(username: "test3", password: "1234")
- Adopter.create!(username: "test4", password: "1234")
- Adopter.create!(username: "test5", password: "1234")
+#  Adopter.create!(username: "test2", password: "1234")
+#  Adopter.create!(username: "test3", password: "1234")
+#  Adopter.create!(username: "test4", password: "1234")
+#  Adopter.create!(username: "test5", password: "1234")
+
+    # name: "",
+    # breed: "",
+    # color: "",
+    # sex: "",
+    # size: "",
+    # age: "",
+    # houseTrained: "",
+    # health: "",
+    # goodHome: "",
+    # badHome: "",
+    # about: "",
+    # img1: "",
+    # img2: "",
+    # img3: ""

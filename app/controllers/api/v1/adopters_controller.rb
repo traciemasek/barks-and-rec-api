@@ -18,6 +18,6 @@ class Api::V1::AdoptersController < ApplicationController
 
   private
   def adopter_params
-    params.require(:adopter).permit(:username, :password)
+    params.require(:adopter).permit(:username, :password, :first_name, :last_name)
   end
 end

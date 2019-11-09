@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_04_232958) do
+ActiveRecord::Schema.define(version: 2019_11_09_165508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2019_11_04_232958) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name"
+    t.string "last_name"
   end
 
   create_table "applications", force: :cascade do |t|
@@ -50,21 +52,18 @@ ActiveRecord::Schema.define(version: 2019_11_04_232958) do
     t.string "img1"
     t.string "img2"
     t.string "img3"
-    t.integer "weight"
     t.string "size"
     t.string "age"
-    t.string "age_group"
-    t.string "description"
-    t.boolean "altered"
-    t.boolean "dog_friendly"
-    t.boolean "kid_friendly"
-    t.boolean "cat_friendly"
-    t.boolean "has_special_needs"
-    t.string "special_needs_desc"
     t.boolean "adopted", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "sex"
+    t.string "color"
+    t.string "about"
+    t.string "houseTrained"
+    t.string "health"
+    t.string "goodHome"
+    t.string "badHome"
   end
 
   create_table "favorites", force: :cascade do |t|
