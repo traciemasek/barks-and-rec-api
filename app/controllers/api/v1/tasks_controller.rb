@@ -21,25 +21,32 @@ class Api::V1::TasksController < ApplicationController
     end
     task_to_update.update(complete: true)
     new_task = Task.new(adopter_id: params[:adopter_id], category: new_category)
+    # also make new notification and set message accordingly
+    notification = Notification.create(adopter_id: params[:adopter_id], message: "Your application status has been updated")
     app.update("#{current_category}" => true)
  
     if new_task.save
-      render json: {newTask: new_task, updatedTask: task_to_update, updatedApplication: app}
+      render json: {newTask: new_task, updatedTask: task_to_update, updatedApplication: app, notification: notification}
     else
       render json: {errors: "Something went wrong"}
     end
   end
 
+  # might want to make this a custom route
   def update
     # byebug
+    # for final approval of the task
     app = Application.find_by(adopter_id: params[:adopter_id])
     task_to_update = Task.find_by(id: params[:id])
     current_category = params[:category]
 
+    # create final approval notification
+    notification = Notification.create(adopter_id: params[:adopter_id], message: "Your application has been approved!!")
+
     task_to_update.update(complete: true)
     app.update("#{current_category}" => true)
     
-    render json: {updatedTask: task_to_update, updatedApplication: app}
+    render json: {updatedTask: task_to_update, updatedApplication: app, notification: notification}
 
   end
 

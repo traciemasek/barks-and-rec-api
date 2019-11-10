@@ -5,18 +5,15 @@ Dog.create!(
   breed: "French Bulldog & Pit Bull Terrier Mix",
   img1: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46425000/2/?bust=1572446124&width=1080",
   img2: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46425000/1/?bust=1572446124&width=1080",
-  # img3: "",
-  weight: 48,
+  img3: "",
+  color: "tan"
   size: "medium",
-  age: "3 years",
-  age_group: "adult",
-  description: "Leslie graduated top of her class at Pawnee Dog School, where she was Co-Vice President of the student body. Leslie is an over-achiever who lives to serve and to snuggle. Leslie Knope is extremely cheerful, ambitious, hard-working and optimistic, and loves waffles."
-  altered: true,
-  dog_friendly: true,
-  kid_friendly: true,
-  cat_friendly: true,
-  has_special_needs: false,
-  # special_needs_desc:
+  age: "adult",
+  about: "Leslie graduated top of her class at Pawnee Dog School, where she was Co-Vice President of the student body. Leslie is an over-achiever who lives to serve and to snuggle. Leslie Knope is extremely cheerful, ambitious, hard-working and optimistic, and loves waffles."
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "other dogs, cats, children",
+  badHome: ""
  )
 Dog.create!(
   name: "Ron Swanson",
@@ -38,7 +35,7 @@ Dog.create!(
   # special_needs_desc:
  )
 Dog.create!(
-  name: "Seaweed",
+  name: "Ben Wyatt",
   sex: "female",
   breed: "chihuahua",
   img1: ruby3,
@@ -57,7 +54,7 @@ Dog.create!(
   special_needs_desc: "medication for old age"
  )
 Dog.create!(
-  name: "Rufus",
+  name: "Andy Dwyer",
   sex: "male",
   breed: "pitbull",
   img1: ruby4,
@@ -75,8 +72,3 @@ Dog.create!(
   has_special_needs: false,
   special_needs_desc: ""
  )
-
- Adopter.create!(username: "test2", password: "1234")
- Adopter.create!(username: "test3", password: "1234")
- Adopter.create!(username: "test4", password: "1234")
- Adopter.create!(username: "test5", password: "1234")

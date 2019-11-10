@@ -7,4 +7,5 @@ class Adopter < ApplicationRecord
   has_many :dogs, through: :favorites
   has_one :application, dependent: :destroy
   has_many :tasks, dependent: :destroy
+  has_many :notifications, dependent: :destroy
 end
