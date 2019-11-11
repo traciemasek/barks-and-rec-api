@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       resources :applications
       resources :favorites
       resources :tasks
-      resources :notifications
+      resources :notifications, only: [:update]
+
+      mount ActionCable.server => '/cable'
 
       post "/signup", to: "adopters#create"
       post "/adopter_login", to: "auth#adopter_login"
@@ -16,7 +18,6 @@ Rails.application.routes.draw do
       get "/auto_login_admin", to: "auth#auto_login_admin"
       get "/auto_login_adopter", to: "auth#auto_login_adopter"
       get "/auto_login", to: "auth#auto_login"
-      # post "/admin_login", to: "somewhere"
     end
   end
 

@@ -26,6 +26,8 @@ class Api::V1::TasksController < ApplicationController
     app.update("#{current_category}" => true)
  
     if new_task.save
+      ActionCable.server.broadcast('notification_channel', {updatedApplication: app, notification: notification})
+
       render json: {newTask: new_task, updatedTask: task_to_update, updatedApplication: app, notification: notification}
     else
       render json: {errors: "Something went wrong"}
@@ -45,7 +47,11 @@ class Api::V1::TasksController < ApplicationController
 
     task_to_update.update(complete: true)
     app.update("#{current_category}" => true)
+
+    # might want to only send a notice otherwise everyone on the channel will see all notifications
     
+    ActionCable.server.broadcast('notification_channel', { updatedApplication: app, notification: notification})
+
     render json: {updatedTask: task_to_update, updatedApplication: app, notification: notification}
 
   end
