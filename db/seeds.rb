@@ -105,7 +105,7 @@ Dog.create!(
   img2: "",
   img3: "",
   size: "medium",
-  age: "adult",
+  age: "puppy",
   about: "a lucky lady",
   color: "black",
   houseTrained: "Yes",
@@ -128,6 +128,54 @@ Dog.create!(
   health: "N/A",
   goodHome: "dogs, cats, children",
   badHome: ""
+ )
+Dog.create!(
+  name: "Peanut",
+  sex: "female",
+  breed: "Terrier & Jack Russell Terrier Mix",
+  img1: "https://lh3.googleusercontent.com/F-kdNW0CamOw0mCGpMGpEkhZo44zBbyog7xLfuNZA7DcIdDzt-5TC84DLrMydaw8_7hhYZ0xgX21DuD6I0j4mO_T_Jgb2S3drcJPIxMPprNrAznyXsdmoVS4uVY7PrNn28J2KZYpuo_Jb550SmWhHI2RhOt13LSdwhJ371bMFwAUr85uwKd-stxk8kTz91NzTZ-_vi3Hayq6Ft_RxEY8BAbVRuXj0lY6Qerq6ft3X3EN8ogUrlhV7QRff9binxdmTFd6kteB4zd9zf8FJOZLerfs4c8psAC6DkY-b9K4aOeT9KLch4-GrvMfyrpeK7jiSIPrHTKGsg89I2xwLgd2wwqUp0XTB_6UP5IMZMEI1e7Rud6N0iQWbgzExPyi4F_eqVziWMTgNk8jOFZnBuYa61j1TjI8bPPJZs2PTOjNAuuHn4vfzm19xhvvOH5Mr6-9T6RjGNiWE9w91MbD49PXGDAb56eC7M_kyCOtOv_2ZR_RFYLmLk3N-pIpLJ6yhUnecXE3M2gl2n8wQsItSgD_w1wNYcaD8kLF3pI75T9IxbmHl_BKfSORzw--EtAY6I0XwzSF7hlCrqnX4kVCvBsYycDFOJOuD5sdOxiZZR4VyDnrEn_TZOwOjUb4wpVlKcxsfF175QWkzh0GTiXKukZUQ74Yabw-AhQN660Jq_mLs6BBuAx2LTxNlYT0AscwT09ARURJSoqLw2G9zE-St_AfQLeum-oBXxC_umMotvGuOKlNk-7FCA=s765-no",
+  img2: "",
+  img3: "",
+  size: "small",
+  age: "young",
+  about: "Peanut is the life of the party",
+  color: "white/cream",
+  houseTrained: "Yes",
+  health: "N/A",
+  goodHome: "other dogs, children",
+  badHome: ""
+ )
+Dog.create!(
+  name: "Fireball",
+  sex: "male",
+  breed: "basset house pitbull mix",
+  img1: "https://lh3.googleusercontent.com/ixOuzlRNhzAgN1ibrvFZyGP6Y2j3Q5U5VL5jBA9Kt_vWXLhgoeN0-qGetgtWRvb-6PS1kSN2w9sz2eGTpsOJEMqWTLrA7gioExY96SMfUJ3_VV_sRK_d0uEz_KQpbea1gpZuY_UfqiJm7dozs9gLGRaLe-6tEraPmaH5y6eYgIj8yB7lE8w5XzPFHNwIZyfFn5CYMWWvUkLCGzZdiI3LqhMJDUURCF8dR--AbuGAm90XQnYbGLpf8IVN8NA4-KsIMJ-d2M3Rgs31a84-L8VIuLpbVBPcRxcHUbpxIkimwWpiggzVA0PH8FVeNeJnA0lEjirC0cjlb5IijOLfzXf6E6l3uuibr3VJXaQhld3nyGWurPOc76UudXsvIdY3nUCBf8puK_C4qFWNhOAq17CoQ5yDj0p83IfIdcfjhBi1NHy5lBo02Ep24sZJrXko5zw6y69Sbzgdl3R05maDz_dAzo-Y4JwyqXjClf140Zv6z5fcidis3QTGHOOH6koAbaZTlJe_u2pYmNw9iijAmskjxpI4fZlO_FcYzmwp-nHbvCKV3HZPBSvU_xnoxlK9URNifX9AzSL-iQQaCrcVQnY9mkJRzas7yIjigvQxko9e-hVHCNeII7RKjsKYVuX4wQLuNkOVf_su7iQK3JAJGFTep6TZkSO1OuOrNYAry4n7dgmjj8J3ILHsbXKu7IIKy8G0Q0474mODfcEwAGoxis6RQye3HbHotcRllyLWq4H3jp89tsX3NQ=w765-h764-no",
+  img2: "",
+  img3: "",
+  size: "XL",
+  age: "adult",
+  about: "certified big beefer",
+  color: "white and tan",
+  houseTrained: "Working on it",
+  health: "N/A",
+  goodHome: "other dogs, children, cats",
+  badHome: "chickens"
+ )
+Dog.create!(
+  name: "Olivia Benson",
+  sex: "female",
+  breed: "Hound mix",
+  img1: "https://lh3.googleusercontent.com/6iBQn75ApoLtL2XS_wESCVKFLIEGA2JVePPVsfqmdBMThtjx0LlwST_UuVaadji4WkSxZWmpJG9aTilZ5Q6GT6s0gS_bLptWtF4NmFz5PCg37_U9Ay2xu3-KP5KZoU3tnyIBJ27n-AcSj2IQjgcvt0cyq_CdQX0lEVtRlVI1oPhwtjEegLB3I4QSISdeBQnYH_WUQ0sMK1khqZo7mRpCoHJU6QTGuYKQqEa6EnquVr8_ai8rKkL6byA6lKlkwx5Mjbwb_rdB9Fao7M4YUVi1KqGg_47K0tWR8OyJzur8YYRKmN46GZi7LsIkfeXZoK_ZEMvzlwwnK8fhWoCKg9yOXzQyAY3xW_o_LyoZN_hJ0RcrGLwWSIQ2q3NcJkPCbge9Z2Kby5TDZtGObPiaAbjX2VukuU8A268RIsb0A4FfCm4otrgeCn9njJn8I-c-OiaHG7zA5Fa2wuvRoecM46_KQIK3TgREADj6j8-1jpLS5H90xclsvC_AX5FwzA6G6hrROpBF5Ks-PaBpYU2T8XhCnhsFLcxb_4lBE3lsnXiLRJ8vWUA-0YqfPyaw0EMwnd77juDBsM---uP0oeHVmxN4Ei64I41jc3Lj752xTvGDjT-QdgHQescxFe-iIaXWpc-NFNAJSaxhy_9RRt1uyYdH--u0XTeMTFBcphN-FymVr5vKsz46DqVP_BrbB-KjsDvwAN0-5-HDTwqkrciyKVhC3_dcFtv-MVQcfccgwfYZRIcxWJLnOQ=w1019-h765-no",
+  img2: "",
+  img3: "",
+  size: "large",
+  age: "young",
+  about: "Olivia Benson will not leave a crime unsolved",
+  color: "black/white",
+  houseTrained: "Working on it",
+  health: "",
+  goodHome: "other dogs, children, Stabler",
+  badHome: "cats, crimes"
  )
 
 # Dog.create(name: "Cousin Larry", sex: "male", breed: "mixed", img1: "https://lh3.googleusercontent.com/NaldLYwjef-egqZSs43ccPtQ23ZNCUAPUck7blsNARUmOPwU2V7iJ5OkreMdJIV_6vt0P0CXDcV1qwfrff0MCp0wBmW8tNtKaQq7MEoT_drhZRqcPSqQRJCUozLXhTgKoZ7nTefwL_s=s764-no", weight: 15, size: "small", age: "9", age_group: "adult", description: "a perfect stranger to no one", altered: true, dog_friendly: true, kid_friendly: true, cat_friendly: true, has_special_needs: false, special_needs_desc: "")
