@@ -3,25 +3,25 @@ Dog.create!(
   name: "Leslie Knope",
   sex: "female",
   breed: "French Bulldog & Pit Bull Terrier Mix",
-  img1: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46425000/2/?bust=1572446124&width=1080",
-  img2: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46425000/1/?bust=1572446124&width=1080",
+  img1: "https://live.staticflickr.com/65535/49061217166_9b1d746bfb_w.jpg",
+  img2: "https://live.staticflickr.com/65535/49060706588_70852a1367_o.jpg",
   img3: "",
   color: "tan"
   size: "medium",
   age: "adult",
-  about: "Leslie graduated top of her class at Pawnee Dog School, where she was Co-Vice President of the student body. Leslie is an over-achiever who lives to serve and to snuggle. Leslie Knope is extremely cheerful, ambitious, hard-working and optimistic, and loves waffles."
+  about: "Although born in the neighboring rival town of Eagleton, due to the fact that the Pawnee hospital was overrun with raccoons, Leslie is a definite Pawneean. She vowed early on to give back to this vibrant and fascinating town by living a life of public service. Leslie graduated top of her class at Pawnee Dog School, where she was Co-Vice President of the student body. Leslie is an over-achiever who lives to serve. Leslie Knope is extremely cheerful, ambitious, hard-working and optimistic, and loves waffles."
   houseTrained: "Yes",
   health: "N/A",
   goodHome: "other dogs, cats, children",
-  badHome: ""
+  badHome: "Eagletonians, salad"
  )
 Dog.create!(
   name: "Ron Swanson",
   sex: "male",
   breed: "Boxer & Mastiff Mix",
-  img1: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45900907/1/?bust=1567884697&width=1080",
-  img2: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45900907/2/?bust=1567884709&width=1080",
-  img3: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/45900907/4/?bust=1567884730&width=1080",
+  img1: "https://live.staticflickr.com/65535/49061283896_05836182be.jpg",
+  img2: "https://live.staticflickr.com/65535/49061512552_9c84c74487.jpg",
+  img3: "https://live.staticflickr.com/65535/49060773338_3abc480ab7_w.jpg",
   color: "brindle"
   size: "large",
   age: "senior",
@@ -29,13 +29,13 @@ Dog.create!(
   houseTrained: "Yes",
   health: "N/A",
   goodHome: "children",
-  badHome: "other dogs, cats, other animals, skim milk"
+  badHome: "bananas, skim milk, Tammy 1, Tammy 2"
  )
 Dog.create!(
   name: "Ben Wyatt",
   sex: "male",
   breed: "Jindo & Terrier Mix",
-  img1: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46533727/1/?bust=1573395480&width=1080",
+  img1: "https://live.staticflickr.com/65535/49061547802_1f966656ef.jpg",
   img2: "",
   img3: "",
   color: "brown"
@@ -44,7 +44,7 @@ Dog.create!(
   about: "Ben is very serious, mature and work-oriented, and usually doesn't seem fazed by much of the immature, eccentric behavior from some of the other members of the Pawnee Barks and Recreation Department. Ben is often teased for his affinity for, references to,and vast knowledge in Star Wars, Lord of the Rings, Star Trek, Game of Thrones and other things considered to be nerdy. His love for calzones is also well known. Ben created a game called The Cones of Dunshire.",
   houseTrained: "Working on it",
   health: "N/A",
-  goodHome: "dogs, children, calzones",
+  goodHome: "dogs, children, ultimate frisbee, calzones",
   badHome: "cats"
  )
 
@@ -53,7 +53,7 @@ Dog.create!(
   sex: "female",
   breed: "pocket pittie",
   img1: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46514165/1/?bust=1573199697&width=1080",
-  img2: "",
+  img2: "https://www.shelterluv.com/sites/default/files/styles/large_square/public/animal_pics/3447/2019/10/27/11/20191027113516.png?itok=etUjZpfp",
   img3: "",
   color: "black and white"
   size: "medium",
@@ -273,3 +273,5 @@ Dog.create!(
   goodHome: "",
   badHome: ""
  )
+
+#  Duke Silver
