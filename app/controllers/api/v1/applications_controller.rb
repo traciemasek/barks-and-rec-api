@@ -7,11 +7,12 @@ class Api::V1::ApplicationsController < ApplicationController
 
   def create
     # byebug
+    adopter = Adopter.find_by(id: params[:adopter_id])
     application = Application.create(application_params)
     if application.valid?
       initial_review_task = Task.create(adopter_id: params[:adopter_id], category: "initial_review")
 
-      ActionCable.server.broadcast('task_channel', {task: initial_review_task})
+      ActionCable.server.broadcast('task_channel', {task: initial_review_task, adopter: adopter})
  
       render json: {application: application, tasks: [initial_review_task]}
     else

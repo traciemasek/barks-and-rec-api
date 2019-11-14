@@ -1,5 +1,11 @@
 class Api::V1::NotificationsController < ApplicationController
 
+  def index
+    notifications = Notification.all 
+    render json: notifications
+
+  end
+
   def update
     # find the notification, update read to true
     notification = Notification.find_by(id: params[:id])

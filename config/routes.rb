@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :applications
       resources :favorites
       resources :tasks
-      resources :notifications, only: [:update]
+      resources :notifications, only: [:update, :index]
 
       mount ActionCable.server => '/cable'
 
