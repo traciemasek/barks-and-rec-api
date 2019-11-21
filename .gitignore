@@ -23,6 +23,6 @@
 
 .env
 
-# Untracked files:
+# IGNORE
 db/draftSeeds.rb
 db/rubySeeds.rb
