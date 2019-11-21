@@ -23,5 +23,6 @@
 
 .env
 
-draftSeeds.rb
-rubySeeds.rb
+# Untracked files:
+db/draftSeeds.rb
+db/rubySeeds.rb
