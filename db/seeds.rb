@@ -7,30 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-
-
-
-#  Adopter.create!(username: "test2", password: "1234")
-#  Adopter.create!(username: "test3", password: "1234")
-#  Adopter.create!(username: "test4", password: "1234")
-#  Adopter.create!(username: "test5", password: "1234")
-
-    # name: "",
-    # breed: "",
-    # color: "",
-    # sex: "",
-    # size: "",
-    # age: "",
-    # houseTrained: "",
-    # health: "",
-    # goodHome: "",
-    # badHome: "",
-    # about: "",
-    # img1: "",
-    # img2: "",
-    # img3: ""
+    Admin.create!(username: "admin", password: "1234")
+  
 
     Dog.destroy_all
+
     Dog.create!(
       name: "Leslie Knope",
       sex: "female",
@@ -321,3 +302,18 @@
       "goodHome": "other dogs, cats, Scandal",
       "badHome": ""
     )
+
+      # name: "",
+    # breed: "",
+    # color: "",
+    # sex: "",
+    # size: "",
+    # age: "",
+    # houseTrained: "",
+    # health: "",
+    # goodHome: "",
+    # badHome: "",
+    # about: "",
+    # img1: "",
+    # img2: "",
+    # img3: ""

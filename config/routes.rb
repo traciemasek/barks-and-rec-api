@@ -2,12 +2,12 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do 
-      resources :admins
-      resources :adopters
-      resources :dogs
-      resources :applications
-      resources :favorites
-      resources :tasks
+      resources :admins, only: [:index]
+      resources :adopters, only: [:index, :create]
+      resources :dogs, only: [:index, :create, :update]
+      resources :applications, only: [:index, :create, :update]
+      resources :favorites, only: [:index, :create, :delete]
+      resources :tasks, only: [:index, :create, :update]
       resources :notifications, only: [:update, :index]
 
       mount ActionCable.server => '/cable'

@@ -22,3 +22,6 @@
 /config/master.key
 
 .env
+
+draftSeeds.rb
+rubySeeds.rb

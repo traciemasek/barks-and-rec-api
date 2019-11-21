@@ -9,7 +9,6 @@ class Api::V1::FavoritesController < ApplicationController
     favorite = Favorite.create(favorite_params)
     dog = Dog.find_by(id: params[:favorite][:dog_id])
     if favorite.valid?
-      # dog = Dog.find_by(id: params[:favorite][:dog_id])
       render json: {favorite: favorite, favoriteDog: dog}, status: :created
     else
       render json: {errors: favorite.errors.full_messages}, status: :not_acceptable
@@ -19,8 +18,7 @@ class Api::V1::FavoritesController < ApplicationController
   def destroy
     # byebug
     # need to send the id of the favorite NOT the dog
-    # favorite = Favorite.find_by(id: params[:id])
-    favorite = Favorite.find(params[:id])
+    favorite = Favorite.find_by(id: params[:id])
     favorite.destroy
     render json: favorite
   end
